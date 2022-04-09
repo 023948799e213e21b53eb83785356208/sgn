@@ -1,0 +1,697 @@
+local ScreenGui = Instance.new("ScreenGui")
+local loading = Instance.new("Frame")
+local maintitle = Instance.new("TextLabel")
+local lowertitle = Instance.new("TextLabel")
+local main = Instance.new("Frame")
+local HS = Instance.new("TextButton")
+local G = Instance.new("TextButton")
+local N = Instance.new("TextButton")
+local HSS = Instance.new("ScrollingFrame")
+local titleh = Instance.new("TextLabel")
+local hss = Instance.new("TextButton")
+local hss_2 = Instance.new("TextButton")
+local hss_3 = Instance.new("TextButton")
+local hss_4 = Instance.new("TextButton")
+local hss_5 = Instance.new("TextButton")
+local hss_6 = Instance.new("TextButton")
+local DraggableFrame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local GS = Instance.new("ScrollingFrame")
+local titleg = Instance.new("TextLabel")
+local GSS = Instance.new("TextButton")
+local GSS_2 = Instance.new("TextButton")
+local GSS_3 = Instance.new("TextButton")
+local GSS_4 = Instance.new("TextButton")
+local GSS_5 = Instance.new("TextButton")
+local notif = Instance.new("Frame")
+local DraggableFrame_2 = Instance.new("Frame")
+local maintitle_2 = Instance.new("TextLabel")
+local maintitle_3 = Instance.new("TextLabel")
+local maintitle_4 = Instance.new("TextLabel")
+local maintitle_5 = Instance.new("TextLabel")
+local ok = Instance.new("TextButton")
+ 
+ScreenGui.Parent = game.CoreGui
+
+loading.Name = "loading"
+loading.Parent = ScreenGui
+loading.BackgroundColor3 = Color3.new(1, 0.4, 0)
+loading.BorderSizePixel = 0
+loading.Position = UDim2.new(0.449899793, 0, 0.404174566, 0)
+loading.Size = UDim2.new(0, 100, 0, 100)
+
+
+maintitle.Name = "maintitle"
+maintitle.Parent = loading
+maintitle.BackgroundColor3 = Color3.new(1, 1, 1)
+maintitle.BackgroundTransparency = 1
+maintitle.BorderSizePixel = 0
+maintitle.Position = UDim2.new(0.119999997, 0, 0.209999993, 0)
+maintitle.Size = UDim2.new(0, 76, 0, 52)
+maintitle.Font = Enum.Font.Gotham
+maintitle.Text = "SH"
+maintitle.TextColor3 = Color3.new(1, 1, 1)
+maintitle.TextScaled = true
+maintitle.TextSize = 24
+maintitle.TextWrapped = true
+print("loaded MainTitle animation")
+wait(0.1)
+maintitle.TextTransparency = 1.0
+wait(0.1)
+maintitle.TextTransparency = 0.9
+wait(0.1)
+maintitle.TextTransparency = 0.8
+wait(0.1)
+maintitle.TextTransparency = 0.7
+wait(0.1)
+maintitle.TextTransparency = 0.6
+wait(0.1)
+maintitle.TextTransparency = 0.5
+wait(0.1)
+maintitle.TextTransparency = 0.4
+wait(0.1)
+maintitle.TextTransparency = 0.3
+wait(0.1)
+maintitle.TextTransparency = 0.2
+wait(0.1)
+maintitle.TextTransparency = 0.1
+
+
+lowertitle.Name = "lowertitle"
+lowertitle.Parent = loading
+lowertitle.BackgroundColor3 = Color3.new(1, 1, 1)
+lowertitle.BackgroundTransparency = 1
+lowertitle.BorderSizePixel = 0
+lowertitle.Position = UDim2.new(0.119999997, 0, 0.670000017, 0)
+lowertitle.Size = UDim2.new(0, 76, 0, 12)
+lowertitle.Font = Enum.Font.Gotham
+lowertitle.Text = "Skidded"
+lowertitle.TextColor3 = Color3.new(1, 1, 1)
+lowertitle.TextScaled = false
+lowertitle.TextSize = 1
+lowertitle.TextWrapped = true
+wait(0)
+lowertitle.TextSize = 0
+wait(0.01)
+lowertitle.TextSize = 0.5
+wait(0.01)
+lowertitle.TextSize = 1
+wait(0.01)
+lowertitle.TextSize = 1.5
+wait(0.01)
+
+lowertitle.TextSize = 2
+wait(0.01)
+lowertitle.TextSize = 2.5
+wait(0.01)
+
+lowertitle.TextSize = 3
+wait(0.01)
+lowertitle.TextSize = 3.5
+wait(0.01)
+
+lowertitle.TextSize = 4
+wait(0.01)
+lowertitle.TextSize = 4.5
+wait(0.01)
+
+lowertitle.TextSize = 5
+wait(0.01)
+lowertitle.TextSize = 5.5
+wait(0.01)
+
+lowertitle.TextSize = 6
+wait(0.01)
+lowertitle.TextSize = 6.5
+wait(0.01)
+
+lowertitle.TextSize = 7
+wait(0.01)
+lowertitle.TextSize = 7.5
+wait(0.01)
+
+lowertitle.TextSize = 8
+wait(0.01)
+lowertitle.TextSize = 8.5
+wait(0.01)
+
+lowertitle.TextSize = 9
+wait(0.01)
+lowertitle.TextSize = 9.5
+wait(0.01)
+
+lowertitle.TextSize = 10
+wait(0.01)
+lowertitle.TextSize = 10.5
+wait(0.01)
+
+lowertitle.TextSize = 11
+wait(0.01)
+lowertitle.TextSize = 11.5
+wait(0.01)
+
+lowertitle.TextSize = 12
+wait(0.01)
+lowertitle.TextSize = 12.5
+wait(0.01)
+
+lowertitle.TextSize = 13
+wait(0.01)
+lowertitle.TextSize = 13.5
+wait(0.01)
+
+lowertitle.TextSize = 14
+wait(0.01)
+lowertitle.TextSize = 14.5
+wait(0.01)
+
+lowertitle.TextSize = 15
+wait(0.01)
+lowertitle.TextSize = 15.5
+wait(0.01)
+
+lowertitle.TextSize = 16
+wait(0.01)
+lowertitle.TextSize = 16.5
+wait(0.01)
+
+lowertitle.TextSize = 17
+wait(0.01)
+lowertitle.TextSize = 17.5
+wait(0.01)
+
+lowertitle.TextSize = 18
+wait(0.61)
+
+print("Loaded lowetitle Animation")
+print("starting up loading sequence")
+
+
+lowertitle.TextTransparency = 0.1
+wait(0.01)
+lowertitle.TextTransparency = 0.2
+wait(0.01)
+lowertitle.TextTransparency = 0.3
+wait(0.01)
+lowertitle.TextTransparency = 0.4
+wait(0.01)
+lowertitle.TextTransparency = 0.5
+wait(0.01)
+lowertitle.TextTransparency = 0.6
+wait(0.01)
+lowertitle.TextTransparency = 0.7
+wait(0.01)
+lowertitle.TextTransparency = 0.8
+wait(0.01)
+lowertitle.TextTransparency = 0.9
+wait(0.01)
+lowertitle.TextTransparency = 1.0
+wait(0.202)
+lowertitle.Text = "Hub"
+lowertitle.TextTransparency = 1.0
+wait(0.01)
+lowertitle.TextTransparency = 0.9
+wait(0.01)
+lowertitle.TextTransparency = 0.8
+wait(0.01)
+lowertitle.TextTransparency = 0.7
+wait(0.01)
+lowertitle.TextTransparency = 0.6
+wait(0.01)
+lowertitle.TextTransparency = 0.5
+wait(0.01)
+lowertitle.TextTransparency = 0.4
+wait(0.01)
+lowertitle.TextTransparency = 0.3
+wait(0.01)
+lowertitle.TextTransparency = 0.2
+wait(0.01)
+lowertitle.TextTransparency = 0.1
+wait(1.111111)
+
+maintitle.TextTransparency = 0.1
+wait(0.01)
+maintitle.TextTransparency = 0.2
+wait(0.01)
+maintitle.TextTransparency = 0.3
+wait(0.01)
+maintitle.TextTransparency = 0.4
+wait(0.01)
+maintitle.TextTransparency = 0.5
+wait(0.01)
+maintitle.TextTransparency = 0.6
+wait(0.01)
+maintitle.TextTransparency = 0.7
+wait(0.01)
+maintitle.TextTransparency = 0.8
+wait(0.01)
+maintitle.TextTransparency = 0.9
+wait(0.01)
+maintitle.TextTransparency = 1.0
+lowertitle.TextTransparency = 0.1
+wait(0.01)
+lowertitle.TextTransparency = 0.2
+wait(0.01)
+lowertitle.TextTransparency = 0.3
+wait(0.01)
+lowertitle.TextTransparency = 0.4
+wait(0.01)
+lowertitle.TextTransparency = 0.5
+wait(0.01)
+lowertitle.TextTransparency = 0.6
+wait(0.01)
+lowertitle.TextTransparency = 0.7
+wait(0.01)
+lowertitle.TextTransparency = 0.8
+wait(0.01)
+lowertitle.TextTransparency = 0.9
+wait(0.01)
+lowertitle.TextTransparency = 1.0
+wait(1.111111)
+loading.BackgroundTransparency = 0.1
+wait(0.01)
+loading.BackgroundTransparency = 0.2
+wait(0.01)
+loading.BackgroundTransparency = 0.3
+wait(0.01)
+loading.BackgroundTransparency = 0.4
+wait(0.01)
+loading.BackgroundTransparency = 0.5
+wait(0.01)
+loading.BackgroundTransparency = 0.6
+wait(0.01)
+loading.BackgroundTransparency = 0.7
+wait(0.01)
+loading.BackgroundTransparency = 0.8
+wait(0.01)
+loading.BackgroundTransparency = 0.9
+wait(0.01)
+loading.BackgroundTransparency = 1.0
+
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.new(1, 0.501961, 0)
+main.BorderSizePixel = 0
+main.Position = UDim2.new(0.00701402826, 0, 0.284629971, 0)
+main.Size = UDim2.new(0, 395, 0, 307)
+main.Active = true
+main.Visible = false
+wait(0.1)
+main.Visible = true
+main.Active = true
+
+
+--C:\ProgramData\Microsoft\Windows\Start Menu\Programs
+--[[
+
+main shut
+
+--]]
+HS.Name = "HS"
+HS.Parent = main
+HS.BackgroundColor3 = Color3.new(1, 0.533333, 0)
+HS.BorderSizePixel = 0
+HS.Position = UDim2.new(0.0384506062, 0, 0.686001062, 0)
+HS.Size = UDim2.new(0, 363, 0, 20)
+HS.Font = Enum.Font.SourceSans
+HS.Text = "Hat Scripts"
+HS.TextColor3 = Color3.new(1, 1, 1)
+HS.TextScaled = true
+HS.TextSize = 14
+HS.TextWrapped = true
+HS.MouseButton1Click:connect(function()
+    
+GS.Visible = false
+HSS.Visible = true
+    
+    
+    
+end)
+G.Name = "G"
+G.Parent = main
+G.BackgroundColor3 = Color3.new(1, 0.533333, 0)
+G.BorderSizePixel = 0
+G.Position = UDim2.new(0.0384506062, 0, 0.7772156, 0)
+G.Size = UDim2.new(0, 363, 0, 20)
+G.Font = Enum.Font.SourceSans
+G.Text = "Games"
+G.TextColor3 = Color3.new(1, 1, 1)
+G.TextScaled = true
+G.TextSize = 14
+G.TextWrapped = true
+G.MouseButton1Click:connect(function()
+
+HSS.Visible = false
+GS.Visible = true
+
+end)
+
+N.Name = "N"
+N.Parent = main
+N.BackgroundColor3 = Color3.new(1, 0.533333, 0)
+N.BorderSizePixel = 0
+N.Position = UDim2.new(0.0384506062, 0, 0.865172863, 0)
+N.Size = UDim2.new(0, 363, 0, 20)
+N.Font = Enum.Font.SourceSans
+N.Text = "NET"
+N.TextColor3 = Color3.new(1, 1, 1)
+N.TextScaled = true
+N.TextSize = 14
+N.TextWrapped = true
+N.MouseButton1Click:connect(function()
+
+notif.Visible = true
+
+end)
+HSS.Name = "HSS"
+HSS.Parent = main
+HSS.BackgroundColor3 = Color3.new(1, 0.584314, 0)
+HSS.BorderSizePixel = 0
+HSS.Position = UDim2.new(0.0384506062, 0, 0.0814332217, 0)
+HSS.Size = UDim2.new(0, 363, 0, 176)
+HSS.Visible = false
+HSS.CanvasPosition = Vector2.new(0, 150)
+
+titleh.Name = "titleh"
+titleh.Parent = HSS
+titleh.BackgroundColor3 = Color3.new(1, 1, 1)
+titleh.BackgroundTransparency = 1
+titleh.Position = UDim2.new(0.0523416027, 0, 0.012665282, 0)
+titleh.Size = UDim2.new(0, 325, 0, 21)
+titleh.Font = Enum.Font.GothamSemibold
+titleh.Text = "Hat Scripts"
+titleh.TextColor3 = Color3.new(1, 1, 1)
+titleh.TextScaled = true
+titleh.TextSize = 14
+titleh.TextWrapped = true
+
+hss.Name = "hss"
+hss.Parent = HSS
+hss.BackgroundColor3 = Color3.new(0.87451, 0.466667, 0)
+hss.BorderSizePixel = 0
+hss.Position = UDim2.new(0.0247933883, 0, 0.0610749125, 0)
+hss.Size = UDim2.new(0, 344, 0, 50)
+hss.Font = Enum.Font.GothamBold
+hss.Text = "Achromatic"
+hss.TextColor3 = Color3.new(1, 1, 1)
+hss.TextScaled = true
+hss.TextSize = 14
+hss.TextWrapped = true
+hss.MouseButton1Click:connect(function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/hnGzJS0M'),true))()
+
+end)
+hss_2.Name = "hss"
+hss_2.Parent = HSS
+hss_2.BackgroundColor3 = Color3.new(0.87451, 0.466667, 0)
+hss_2.BorderSizePixel = 0
+hss_2.Position = UDim2.new(0.0247933883, 0, 0.158794791, 0)
+hss_2.Size = UDim2.new(0, 344, 0, 50)
+hss_2.Font = Enum.Font.GothamBold
+hss_2.Text = "Nebula"
+hss_2.TextColor3 = Color3.new(1, 1, 1)
+hss_2.TextScaled = true
+hss_2.TextSize = 14
+hss_2.TextWrapped = true
+hss_2.MouseButton1Click:connect(function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/TSNi1F9L'),true))()
+
+end)
+hss_3.Name = "hss"
+hss_3.Parent = HSS
+hss_3.BackgroundColor3 = Color3.new(0.87451, 0.466667, 0)
+hss_3.BorderSizePixel = 0
+hss_3.Position = UDim2.new(0.0247933883, 0, 0.158794791, 0)
+hss_3.Size = UDim2.new(0, 344, 0, 50)
+hss_3.Font = Enum.Font.GothamBold
+hss_3.Text = "Nebula"
+hss_3.TextColor3 = Color3.new(1, 1, 1)
+hss_3.TextScaled = true
+hss_3.TextSize = 14
+hss_3.TextWrapped = true
+
+hss_4.Name = "hss"
+hss_4.Parent = HSS
+hss_4.BackgroundColor3 = Color3.new(0.87451, 0.466667, 0)
+hss_4.BorderSizePixel = 0
+hss_4.Position = UDim2.new(0.0247933883, 0, 0.266286641, 0)
+hss_4.Size = UDim2.new(0, 344, 0, 50)
+hss_4.Font = Enum.Font.GothamBold
+hss_4.Text = "Skateboard"
+hss_4.TextColor3 = Color3.new(1, 1, 1)
+hss_4.TextScaled = true
+hss_4.TextSize = 14
+hss_4.TextWrapped = true
+hss_4.MouseButton1Click:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/XAXCaupJ"))()
+
+end)
+hss_5.Name = "hss"
+hss_5.Parent = HSS
+hss_5.BackgroundColor3 = Color3.new(0.87451, 0.466667, 0)
+hss_5.BorderSizePixel = 0
+hss_5.Position = UDim2.new(0.0247933883, 0, 0.360749185, 0)
+hss_5.Size = UDim2.new(0, 344, 0, 50)
+hss_5.Font = Enum.Font.GothamBold
+hss_5.Text = "Mizt Hub"
+hss_5.TextColor3 = Color3.new(1, 1, 1)
+hss_5.TextScaled = true
+hss_5.TextSize = 14
+hss_5.TextWrapped = true
+--[[
+
+
+_G.HalfNet = true -- Just make it true
+_G.CustomGui = false -- if you have custom gui turn this on, put the custom gui script below this loadstring
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Sylixe/MiztHub/master/MainFolder/uqXAxyVdQpWTcRCdFXU6Yt2meuDkYcLUDN4SJRekQWZ5wp368zKHreYT4w82AH4U.lua",true))()
+
+
+--]]
+hss_5.MouseButton1Click:connect(function()
+_G.HalfNet = true -- Just make it true
+_G.CustomGui = false -- if you have custom gui turn this on, put the custom gui script below this loadstring
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Sylixe/MiztHub/master/MainFolder/uqXAxyVdQpWTcRCdFXU6Yt2meuDkYcLUDN4SJRekQWZ5wp368zKHreYT4w82AH4U.lua",true))()
+
+end)
+hss_6.Name = "hss"
+hss_6.Parent = HSS
+hss_6.BackgroundColor3 = Color3.new(0.87451, 0.466667, 0)
+hss_6.BorderSizePixel = 0
+hss_6.Position = UDim2.new(0.0247933883, 0, 0.451954395, 0)
+hss_6.Size = UDim2.new(0, 344, 0, 50)
+hss_6.Font = Enum.Font.GothamBold
+hss_6.Text = "Sniper"
+hss_6.TextColor3 = Color3.new(1, 1, 1)
+hss_6.TextScaled = true
+hss_6.TextSize = 14
+hss_6.TextWrapped = true
+--https://pastebin.com/raw/dtz7qGBg
+hss_6.MouseButton1Click:connect(function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/dtz7qGBg",true))()
+
+end)
+DraggableFrame.Name = "DraggableFrame"
+DraggableFrame.Parent = main
+DraggableFrame.BackgroundColor3 = Color3.new(0.827451, 0.454902, 0)
+DraggableFrame.BorderSizePixel = 0
+DraggableFrame.Position = UDim2.new(0, 0, -0.0814332217, 0)
+DraggableFrame.Size = UDim2.new(0, 395, 0, 25)
+
+TextLabel.Parent = main
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.Position = UDim2.new(0.616898537, 0, 0.273251593, 0)
+TextLabel.Rotation = 90
+TextLabel.Size = UDim2.new(0, 325, 0, 21)
+TextLabel.Font = Enum.Font.GothamSemibold
+TextLabel.Text = "Skidded Hub (v1)"
+TextLabel.TextColor3 = Color3.new(1, 1, 1)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14
+TextLabel.TextWrapped = true
+
+GS.Name = "GS"
+GS.Parent = main
+GS.Active = true
+GS.BackgroundColor3 = Color3.new(1, 0.584314, 0)
+GS.BorderSizePixel = 0
+GS.Position = UDim2.new(0.0379999988, 0, 0.0810000002, 0)
+GS.Size = UDim2.new(0, 363, 0, 176)
+
+titleg.Name = "titleg"
+titleg.Parent = GS
+titleg.BackgroundColor3 = Color3.new(1, 1, 1)
+titleg.BackgroundTransparency = 1
+titleg.Position = UDim2.new(0.0523416027, 0, 0.012665282, 0)
+titleg.Size = UDim2.new(0, 325, 0, 21)
+titleg.Font = Enum.Font.GothamSemibold
+titleg.Text = "Games"
+titleg.TextColor3 = Color3.new(1, 1, 1)
+titleg.TextScaled = true
+titleg.TextSize = 14
+titleg.TextWrapped = true
+
+GSS.Name = "GSS"
+GSS.Parent = GS
+GSS.BackgroundColor3 = Color3.new(0.87451, 0.466667, 0)
+GSS.BorderSizePixel = 0
+GSS.Position = UDim2.new(0.0247933883, 0, 0.451954395, 0)
+GSS.Size = UDim2.new(0, 344, 0, 50)
+GSS.Font = Enum.Font.GothamBold
+GSS.Text = "Dex Explorer"
+GSS.TextColor3 = Color3.new(1, 1, 1)
+GSS.TextScaled = true
+GSS.TextSize = 14
+GSS.TextWrapped = true
+GSS.MouseButton1Click:connect(function()
+    loadstring(game:HttpGetAsync("https://pastebin.com/raw/fPP8bZ8Z"))()
+    
+end)
+GSS_2.Name = "GSS"
+GSS_2.Parent = GS
+GSS_2.BackgroundColor3 = Color3.new(0.87451, 0.466667, 0)
+GSS_2.BorderSizePixel = 0
+GSS_2.Position = UDim2.new(0.0247933883, 0, 0.266286641, 0)
+GSS_2.Size = UDim2.new(0, 344, 0, 50)
+GSS_2.Font = Enum.Font.GothamBold
+GSS_2.Text = "EZ Hub"
+GSS_2.TextColor3 = Color3.new(1, 1, 1)
+GSS_2.TextScaled = true
+GSS_2.TextSize = 14
+GSS_2.TextWrapped = true
+GSS_2.MouseButton1Click:connect(function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
+end)
+GSS_3.Name = "GSS"
+GSS_3.Parent = GS
+GSS_3.BackgroundColor3 = Color3.new(0.87451, 0.466667, 0)
+GSS_3.BorderSizePixel = 0
+GSS_3.Position = UDim2.new(0.0247933883, 0, 0.158794791, 0)
+GSS_3.Size = UDim2.new(0, 344, 0, 50)
+GSS_3.Font = Enum.Font.GothamBold
+GSS_3.Text = "Lumber Tycoon Dupe"
+GSS_3.TextColor3 = Color3.new(1, 1, 1)
+GSS_3.TextScaled = true
+GSS_3.TextSize = 14
+GSS_3.TextWrapped = true
+GSS_3.MouseButton1Click:connect(function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/XwLSKeAc", true))()
+end)
+GSS_4.Name = "GSS"
+GSS_4.Parent = GS
+GSS_4.BackgroundColor3 = Color3.new(0.87451, 0.466667, 0)
+GSS_4.BorderSizePixel = 0
+GSS_4.Position = UDim2.new(0.0247933883, 0, 0.360749185, 0)
+GSS_4.Size = UDim2.new(0, 344, 0, 50)
+GSS_4.Font = Enum.Font.GothamBold
+GSS_4.Text = "unavailable"
+GSS_4.TextColor3 = Color3.new(1, 1, 1)
+GSS_4.TextScaled = true
+GSS_4.TextSize = 14
+GSS_4.TextWrapped = true
+
+GSS_5.Name = "GSS"
+GSS_5.Parent = GS
+GSS_5.BackgroundColor3 = Color3.new(0.87451, 0.466667, 0)
+GSS_5.BorderSizePixel = 0
+GSS_5.Position = UDim2.new(0.0247933883, 0, 0.0610749125, 0)
+GSS_5.Size = UDim2.new(0, 344, 0, 50)
+GSS_5.Font = Enum.Font.GothamBold
+GSS_5.Text = "Ragdoll Engine"
+GSS_5.TextColor3 = Color3.new(1, 1, 1)
+GSS_5.TextScaled = true
+GSS_5.TextSize = 14
+GSS_5.TextWrapped = true
+--https://pastebin.com/raw/VC1GgXmw
+GSS_5.MouseButton1Click:connect(function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/VC1GgXmw", true))()
+end)
+notif.Name = "notif"
+notif.Parent = ScreenGui
+notif.BackgroundColor3 = Color3.new(1, 0.501961, 0)
+notif.BorderSizePixel = 0
+notif.Position = UDim2.new(0.641282558, 0, 0.775341928, 0)
+notif.Size = UDim2.new(0, 337, 0, 110)
+notif.Visible = false
+
+DraggableFrame_2.Name = "DraggableFrame"
+DraggableFrame_2.Parent = notif
+DraggableFrame_2.BackgroundColor3 = Color3.new(0.772549, 0.411765, 0)
+DraggableFrame_2.BorderSizePixel = 0
+DraggableFrame_2.Position = UDim2.new(0, 0, -0.235978559, 0)
+DraggableFrame_2.Size = UDim2.new(0, 337, 0, 32)
+
+maintitle_2.Name = "maintitle"
+maintitle_2.Parent = notif
+maintitle_2.BackgroundColor3 = Color3.new(1, 1, 1)
+maintitle_2.BackgroundTransparency = 1
+maintitle_2.BorderSizePixel = 0
+maintitle_2.Position = UDim2.new(0.128902078, 0, -0.217272669, 0)
+maintitle_2.Size = UDim2.new(0, 263, 0, 26)
+maintitle_2.Font = Enum.Font.Gotham
+maintitle_2.Text = "Skidded Hub - Notification"
+maintitle_2.TextColor3 = Color3.new(1, 1, 1)
+maintitle_2.TextScaled = true
+maintitle_2.TextSize = 14
+maintitle_2.TextWrapped = true
+
+maintitle_3.Name = "maintitle"
+maintitle_3.Parent = notif
+maintitle_3.BackgroundColor3 = Color3.new(1, 1, 1)
+maintitle_3.BackgroundTransparency = 1
+maintitle_3.BorderSizePixel = 0
+maintitle_3.Position = UDim2.new(0.0517507493, 0, 0.155454606, 0)
+maintitle_3.Size = UDim2.new(0, 302, 0, 26)
+maintitle_3.Text = "unavailable"
+maintitle_3.TextColor3 = Color3.new(1, 1, 1)
+maintitle_3.TextScaled = true
+maintitle_3.TextSize = 14
+maintitle_3.TextWrapped = true
+
+maintitle_4.Name = "maintitle"
+maintitle_4.Parent = notif
+maintitle_4.BackgroundColor3 = Color3.new(1, 1, 1)
+maintitle_4.BackgroundTransparency = 1
+maintitle_4.BorderSizePixel = 3
+maintitle_4.Position = UDim2.new(0.0636201873, 0, 0.399043679, 0)
+maintitle_4.Size = UDim2.new(0, 285, 0, 18)
+maintitle_4.Font = Enum.Font.GothamSemibold
+maintitle_4.Text = "net patched lol"
+maintitle_4.TextColor3 = Color3.new(1, 1, 1)
+maintitle_4.TextScaled = true
+maintitle_4.TextSize = 14
+maintitle_4.TextWrapped = true
+
+maintitle_5.Name = "maintitle"
+maintitle_5.Parent = notif
+maintitle_5.BackgroundColor3 = Color3.new(1, 1, 1)
+maintitle_5.BackgroundTransparency = 1
+maintitle_5.BorderSizePixel = 3
+maintitle_5.Position = UDim2.new(0.0636201873, 0, 0.562680066, 0)
+maintitle_5.Size = UDim2.new(0, 285, 0, 13)
+maintitle_5.Font = Enum.Font.GothamSemibold
+maintitle_5.Text = "sad"
+maintitle_5.TextColor3 = Color3.new(1, 1, 1)
+maintitle_5.TextScaled = true
+maintitle_5.TextSize = 14
+maintitle_5.TextWrapped = true
+
+ok.Name = "ok"
+ok.Parent = notif
+ok.BackgroundColor3 = Color3.new(1, 0.533333, 0)
+ok.BorderSizePixel = 0
+ok.Position = UDim2.new(0.367827356, 0, 0.740546465, 0)
+ok.Size = UDim2.new(0, 88, 0, 20)
+ok.Font = Enum.Font.SourceSans
+ok.Text = "Alright"
+ok.TextColor3 = Color3.new(1, 1, 1)
+ok.TextScaled = true
+ok.TextSize = 14
+ok.TextWrapped = true
+ok.MouseButton1Click:connect(function()
+    
+    notif.Visible = false
+    
+end)

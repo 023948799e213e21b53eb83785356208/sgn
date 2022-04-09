@@ -1,0 +1,139 @@
+local handTransparency = 0 --transparency of your hands
+local handsOffset = CFrame.fromEulerAnglesXYZ(8, 0, 0)
+local headScale = 2
+local flyspeed = headScale / 2
+
+---------------------------
+
+local lp = game:GetService("Players").LocalPlayer
+local renderstepped = game:GetService("RunService").RenderStepped
+local sg = game:GetService("StarterGui")
+local ws = game:GetService("Workspace")
+local uis = game:GetService("UserInputService")
+local cam = ws.CurrentCamera
+local cf = CFrame.new
+local partsOffset = headScale - 1
+
+local function gp(parent, name, className)
+    local ret = nil
+    pcall(function()
+        for i, v in pairs(parent:GetChildren()) do
+            if v:IsA(className) and (v.Name == name) then 
+                ret = v
+                break
+            end
+        end
+    end)
+    return ret
+end
+
+local c = lp.Character
+local model = gp(c, "Model", "Model")
+local head = gp(c, "Head", "BasePart")
+local root = gp(c, "HumanoidRootPart", "BasePart")
+local la = gp(c, "Left Arm", "BasePart")
+local ra = gp(c, "Right Arm", "BasePart")
+local hum = c:FindFirstChildOfClass("Humanoid")
+
+if not (model and head and root and la and ra and hum) then
+    return
+end
+
+sg:SetCore("VRLaserPointerMode", 0)
+sg:SetCore("VREnableControllerModels", false)
+
+cam.CameraSubject = nil
+cam.CameraType = Enum.CameraType.Scriptable
+cam.HeadScale = headScale
+cam.CFrame = cf(head.Position)
+
+for i, v in pairs(c:GetChildren()) do
+    pcall(function()
+        v.Anchored = true
+        v.CFrame = cam.CFrame
+    end)
+end
+
+local cons = {}
+
+local R1 = 0
+cons.fly = renderstepped:Connect(function()
+	if R1 > 0.05 then
+		cam.CFrame += (ra.CFrame * handsOffset).LookVector * -flyspeed * R1
+	end
+end)
+local R1enum = Enum.KeyCode.ButtonR1
+cons.ic = uis.InputChanged:Connect(function(key)
+	if key.KeyCode == R1enum then
+		R1 = key.Position.Z
+	end
+end)
+
+for i, v in pairs(c:GetDescendants()) do
+    pcall(function()
+        v.Transparency = 1
+    end)
+end
+
+local function setHandTransparency(handName)
+    local hand = gp(model, handName, "BasePart")
+    if hand then
+        hand.Transparency = handTransparency
+    end
+end
+
+setHandTransparency("Left Arm")
+setHandTransparency("LeftUpperArm")
+setHandTransparency("LeftLowerArm")
+setHandTransparency("LeftHand")
+
+setHandTransparency("Right Arm")
+setHandTransparency("RightUpperArm")
+setHandTransparency("RightLowerArm")
+setHandTransparency("RightHand")
+
+local function removeCharPart(name)
+    local part = gp(c, name, "BasePart")
+    if part then
+        part:Destroy()
+    end 
+end
+
+hum.BreakJointsOnDeath = false
+hum.RequiresNeck = false
+
+removeCharPart("Torso")
+removeCharPart("Left Leg")
+removeCharPart("Right Leg")
+
+local enumhead = Enum.UserCFrame.Head
+local enumrh = Enum.UserCFrame.RightHand
+local enumlh = Enum.UserCFrame.LeftHand
+
+cons.cfr = uis.UserCFrameChanged:Connect(function(part, move)
+	if part == enumhead then
+	    head.CFrame = cam.CFrame * cf(move.p * partsOffset) * move
+		root.Position = head.Position - Vector3.new(0, 5, 0)
+	elseif part == enumlh then
+		la.CFrame = cam.CFrame * cf(move.p * partsOffset) * move * handsOffset
+	elseif part == enumrh then
+    	ra.CFrame = cam.CFrame * cf(move.p * partsOffset) * move * handsOffset
+	end
+end)
+
+local function addChanged(inst)
+    cons["chg_" .. inst.Name] = inst:GetPropertyChangedSignal("Parent"):Connect(function()
+        for i, v in pairs(cons) do
+            v:Disconnect()
+        end
+        cam.CameraType = Enum.CameraType.Custom
+    end)
+end
+
+addChanged(c)
+addChanged(model)
+addChanged(la)
+addChanged(ra)
+addChanged(root)
+addChanged(head)
+addChanged(cam)
